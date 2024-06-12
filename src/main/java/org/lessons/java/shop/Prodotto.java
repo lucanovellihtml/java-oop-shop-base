@@ -11,7 +11,7 @@ public class Prodotto {
 	// COSTRUTTORE
 	public Prodotto(String name, String description, double price, double iva) {
 		
-		this.code = (int) Math.random() * 1000;;
+		this.code = (int) Math.random() * 1000;
 		this.name = name;
 		this.description = description;
 		this.price = price;
@@ -30,7 +30,7 @@ public class Prodotto {
 	public double getPriceIva() {
 		
 		this.iva = (this.price/100) * this.iva;
-		System.out.println("- IVA CALCOLATA ---> " + this.iva + "€");
+		System.out.printf("- IVA CALCOLATA ---> %.3f€ \n", this.iva);
 		
 		return this.price + this.iva;
 	}
