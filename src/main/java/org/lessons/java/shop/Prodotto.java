@@ -10,11 +10,13 @@ public class Prodotto {
 	
 	// COSTRUTTORE
 	public Prodotto(String name, String description, double price, double iva) {
-		this.code = (int) Math.random() * 1000;
+		
+		this.code = (int) Math.random() * 1000;;
 		this.name = name;
 		this.description = description;
 		this.price = price;
 		this.iva = iva;
+		
 	}
 	
 	
@@ -23,8 +25,13 @@ public class Prodotto {
 		return this.price;
 	}
 	
+
 	// METODO CHE RESTITUISCE IL PREZZO COMPRENSIVO D'IVA
 	public double getPriceIva() {
+		
+		this.iva = (this.price/100) * this.iva;
+		System.out.println("- IVA CALCOLATA ---> " + this.iva + "€");
+		
 		return this.price + this.iva;
 	}
 	
