@@ -11,15 +11,15 @@ public class Main {
 		
 		// RICHIAMO METODI OGGETTO
 		System.out.println("-*-*-*-*-*- TELECOMANDO -*-*-*-*-*-");
-		System.out.println("- PREZZO TELECOMANDO ---> " + remotControl.getPrice() + "€");
-		System.out.println("- PREZZO TELECOMANDO CON IVA ---> " + remotControl.getPriceIva() + "€");
+		System.out.printf("- PREZZO TELECOMANDO ---> %.3f€ \n", remotControl.getPrice());
+		System.out.printf("- PREZZO TELECOMANDO CON IVA ---> %.3f€ \n", remotControl.getPriceIva());
 		System.out.println("- NOME ESTESO TELECOMANDO ---> " + remotControl.getNameCode());
 		
 		System.out.println("");
 		
 		System.out.println("-*-*-*-*-*- MACCHINA -*-*-*-*-*-");
-		System.out.println("- PREZZO MACCHINA ---> " + card.getPrice() + "€");
-		System.out.println("- PREZZO MACCHINA CON IVA ---> " + card.getPriceIva() + "€" );
+		System.out.printf("- PREZZO MACCHINA ---> %.3f€ \n", card.getPrice());
+		System.out.printf("- PREZZO MACCHINA CON IVA ---> %.3f€ \n", card.getPriceIva());
 		System.out.println("- NOME ESTESO MACCHINA ---> " + card.getNameCode());
 		
 	}
