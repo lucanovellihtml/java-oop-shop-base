@@ -11,7 +11,7 @@ public class Prodotto {
 	// COSTRUTTORE
 	public Prodotto(String name, String description, double price, double iva) {
 		
-		this.code = (int) Math.random() * 1000;
+		this.code = (int) (Math.random() * 1000);
 		this.name = name;
 		this.description = description;
 		this.price = price;
